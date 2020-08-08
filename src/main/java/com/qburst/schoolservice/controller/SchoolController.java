@@ -17,6 +17,7 @@ public class SchoolController {
 	@Autowired
     RestTemplate restTemplate;
  
+	//hysterix added
 	@HystrixCommand(fallbackMethod = "defaultStudentDetails")
 	@GetMapping(value = "/getSchoolDetails/{schoolname}")
     public String getStudents(@PathVariable String schoolname) 
