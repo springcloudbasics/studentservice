@@ -15,7 +15,7 @@ import brave.sampler.Sampler;
 
 public class SchoolserviceApplication {
 
-	// added comment to test
+	// added comment to test one
 	public static void main(String[] args) {
 		SpringApplication.run(SchoolserviceApplication.class, args);
 	}
