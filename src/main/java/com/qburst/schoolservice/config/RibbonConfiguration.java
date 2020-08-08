@@ -16,6 +16,7 @@ public class RibbonConfiguration {
 	@Autowired
     IClientConfig config;
  
+    // bean for autowiring
     @Bean
     public IPing ribbonPing(IClientConfig config) {
         return new PingUrl();
