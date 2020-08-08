@@ -14,7 +14,8 @@ import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 @RestController
 public class SchoolController {
 
-	@Autowired
+	//school controller
+    @Autowired
     RestTemplate restTemplate;
  
 	@HystrixCommand(fallbackMethod = "defaultStudentDetails")
