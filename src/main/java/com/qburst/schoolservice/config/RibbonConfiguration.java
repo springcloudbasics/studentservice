@@ -21,7 +21,7 @@ public class RibbonConfiguration {
     public IPing ribbonPing(IClientConfig config) {
         return new PingUrl();
     }
- 
+    // Ribbon rule configuration
     @Bean
     public IRule ribbonRule(IClientConfig config) {
         return new AvailabilityFilteringRule();
