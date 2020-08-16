@@ -14,7 +14,7 @@ import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 @RestController
 public class SchoolController {
 
-	//school controller
+	//school controller --revert
     @Autowired
     RestTemplate restTemplate;
  
