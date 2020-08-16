@@ -16,7 +16,7 @@ import brave.sampler.Sampler;
 public class SchoolserviceApplication {
 
 
-	// test push -- second
+	// test push -- secon
 	public static void main(String[] args) {
 		SpringApplication.run(SchoolserviceApplication.class, args);
 	}
