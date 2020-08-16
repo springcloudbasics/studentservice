@@ -26,4 +26,8 @@ public class RibbonConfiguration {
     public IRule ribbonRule(IClientConfig config) {
         return new AvailabilityFilteringRule();
     }
+
+    private void testcmdrevert(){
+
+    }
 }
