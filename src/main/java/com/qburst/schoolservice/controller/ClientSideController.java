@@ -32,7 +32,6 @@ public class ClientSideController {
 		return "Server Response :: " + randomString1;
 	}
 
-	//comment to revert commit
 	private void testcmdRevet(){
 
 	}
