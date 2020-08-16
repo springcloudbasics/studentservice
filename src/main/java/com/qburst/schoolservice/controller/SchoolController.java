@@ -36,8 +36,4 @@ public class SchoolController {
 	private String defaultStudentDetails(String name) {
         return "Hello User!"+name;
     }
-
-    private dummyPrivateMethod(){
-
-    }
 }

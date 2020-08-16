@@ -26,7 +26,4 @@ public class RibbonConfiguration {
     public IRule ribbonRule(IClientConfig config) {
         return new AvailabilityFilteringRule();
     }
-    public void addedMethod(){
-
-    }
 }
