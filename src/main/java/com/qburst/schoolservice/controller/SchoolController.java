@@ -31,6 +31,20 @@ public class SchoolController {
  
         return "School Name is  " + schoolname + " \n Student Details " + response;
     }
+
+    @HystrixCommand(fallbackMethod = "defaultStudentDetails")
+    @GetMapping(value = "/getSchoolDetails/{schoolname}")
+    public String getStudentDetails(@PathVariable String schoolname)
+    {
+
+
+        String response = restTemplate.exchange("http://student-service/getStudentDetailsForSchool/{schoolname}",
+                HttpMethod.GET, null, new ParameterizedTypeReference<String>() {}, schoolname).getBody();
+
+
+
+        return "School Name is  " + schoolname + " \n Student Details " + response;
+    }
  
 	private String defaultStudentDetails(String name) {
         return "Hello User!"+name;
