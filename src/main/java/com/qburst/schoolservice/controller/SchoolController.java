@@ -51,7 +51,12 @@ public class SchoolController {
         return "Hello User!"+name;
     }
 
+
     private dummyPrivateMethod(){
+
+
+    private String secondmastercopy(String name) {
+        return "Hello User!"+name;
 
     }
 }
